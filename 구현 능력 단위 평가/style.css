@@ -4,7 +4,7 @@
 
 .bestsellers-section {
     /* background-color: #6a726d; */
-    max-width: 1920px;
+    width: 1920px;
     padding: 124px 80px;
     display: flex;
     flex-direction: column;
