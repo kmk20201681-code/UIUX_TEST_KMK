@@ -1,93 +1,125 @@
-/* body {
-    background-color: antiquewhite;
-} -> 연결확인 */
+    /* body {
+        background-color: antiquewhite;
+    } -> 연결확인 */
 
-.bestsellers-section {
-    /* background-color: #6a726d; */
-    width: 1920px;
-    padding: 124px 80px;
-    display: flex;
-    flex-direction: column;
-}
+    .bestsellers-section {
+        /* background-color: #6a726d; */
+        width: 100%;
+        max-width: 1920px;
+        padding: 124px 80px;
+        display: flex;
+        flex-direction: column;
+    }
 
-/* 베스트 셀러 상단 */
+    /* 베스트 셀러 상단 */
 
-.ul-nav-box {
-    padding:  65px 0;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #E1DED9;
-}
+    .ul-nav-box {
+        padding:  24px 0;
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #E1DED9;
+        margin-bottom: 40px;
+    }
 
-.nav01 {
-    padding: 0;
-    font-weight: bold;
-    font-size: 28px;
-}
+    .nav01 {
+        padding: 0;
+        font-weight: bold;
+        font-size: 28px;
+    }
 
+    
+    .nav02 {
+        font-size: 16px;
+        color: #333;
+        cursor: pointer; /* 마우스 올렸을 때 손가락 모양으로 변하게 해서 버튼 느낌 주기 */
+    }
 
+    /* 스와이프 목록 */
+    .amp_swiper-list {
+        /* background-color: #919b95; */
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        width: 100%;
+    }
 
+    .swli {
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid #E1DED9; */
+        flex-grow: 1;
+    }
 
-/* 스와이프 목록 */
-.amp_swiper-list {
-    /* background-color: #919b95; */
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
+    /* 스와이프 이미지 */
+    .swimg {
+        width: 100%;
+        height: 410px;
+        background-color: #E1DED9;
+        /* border: 1px solid #6a726d; */
 
-.swli {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid #E1DED9; */
-    flex-grow: 1;
-}
+    }
 
-/* 스와이프 이미지 */
-.swimg {
-    height: 410px;
-    background-color: #E1DED9;
-    /* border: 1px solid #6a726d; */
+    /* 스와이프 텍스트 */
 
-}
+    .swtext01 {
+        /* height: 19px; */
+        /* display: flex; */
+        padding: 40px 0 42px 0;
+        color: #333;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .swtext02 {
+        display: flex;
+        /* height: 63px; */
+        padding-bottom: 40px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .price {
+        color: #222;
+        font-size: 16px;
+        font-weight: 700;
+    }
 
-/* 스와이프 텍스트 */
+    .swtext03 {
+        padding: 14px 0 24px 0;
+        border-top: 1px solid #E1DED9;
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .swtsize  {
+        display: flex;
+        /* justify-content: flex-end; */
+        /* align-items: center; */
+        gap: 17px;
+        color: #333;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .sizes01-01, .sizes02-01, .sizes03-01, .sizes04-01 {
+        border-bottom: 1px solid #333; /* 두께 2px, 실선, 검은색 밑줄 */
+        color: #333;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    } 
 
-.swtext01 {
-    height: 19px;
-    /* display: flex; */
-    padding: 40px 0 42px 0;
-}
-.swtext02 {
-    display: flex;
-    height: 63px;
-    padding-bottom: 40px;
-    align-items: flex-start;
-    gap: 10px;
-}
-
-.swtext03 {
-    padding: 14px 0 24px 0;
-    border-top: 1px solid #E1DED9;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-.swtsize  {
-    display: flex;
-    /* justify-content: flex-end; */
-    /* align-items: center; */
-    gap: 17px;
-}
-
-.swtext04 {
-    border: 1px solid #E1DED9;
-    /* background-color: #6a726d; */
-    display: flex;
-    height: 43px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
+    .swtext04 {
+        border: 1px solid #E1DED9;
+        /* background-color: #6a726d; */
+        display: flex;
+        height: 43px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #212529;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #fff;
+        cursor: pointer;
+    }
